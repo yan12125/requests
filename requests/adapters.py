@@ -439,13 +439,10 @@ class HTTPAdapter(BaseAdapter):
                     url=url,
                     body=request.body,
                     headers=request.headers,
-                    redirect=False,
-                    assert_same_host=False,
                     preload_content=False,
                     decode_content=False,
                     retries=self.max_retries,
                     timeout=timeout,
-                    enforce_content_length=True
                 )
 
             # Send the request.
